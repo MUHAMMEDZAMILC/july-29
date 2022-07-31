@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+SC:wght@300&family=Crete+Round&family=DM+Serif+Display&family=Kaushan+Script&family=Oswald:wght@500&family=Pacifico&family=Roboto+Mono:wght@500&family=Teko:wght@300&family=Yantramanav:wght@100;500;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    padding: 20px;
+}
+.head{
+    border-bottom: #777;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 60px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hr-line{
+    width: 80%;
+    margin: auto;
+    
+  }
+  .faqhead {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 80%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    font-family: 'Crete Round', serif;
+    
+}
+.faqcont{
+    margin: auto;
+    /* text-align: center; */
+   width: 80%; 
+   padding: auto;
+   font-family: 'Bree Serif', serif;
+}
+.active,
+.faqhead:hover {
+    color: #ada9a9;
+}
+.faqcont{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faqhead:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    
+}
+@media (max-width:350px)
+{
+    html{
+        font-size: 60%;
+    }
+    .faqhead:after{
+        font-size: 60%;
+    }
+}
+@media (max-width:250px)
+{
+    html{
+        font-size: 30%;
+    }
+}
